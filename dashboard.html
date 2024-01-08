@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Dashboard -->
+    <section class="md:w-[900px] mx-auto bg-[#2A303C] rounded-md py-10 mt-5">
+        <h1 class="text-white text-center text-5xl mb-16">Your Dashboard</h1>
+        <!-- Display -->
+        <div class="grid grid-cols-3 justify-between mb-10">
+
+            <!-- Deposited amount -->
+            <div class="md:w-[200px] mx-auto bg-[#111318] rounded-md text-white text-2xl text-center px-5 py-3">
+                <h3 class="">Deposite</h3>
+                <h2>$<span id="depositedTotal">00</span></h2>
+            </div>
+            <!-- Withdraw amount -->
+            <div class="md:w-[200px] mx-auto bg-[#111318] rounded-md text-white text-2xl text-center px-5 py-3">
+                <h3 class="">Withdraw</h3>
+                <h2>$<span id="withdrawalTotal">00</span></h2>
+            </div>
+            <!-- Balance -->
+            <div class="md:w-[200px] mx-auto bg-[#111318] rounded-md text-white text-2xl text-center px-5 py-3">
+                <h3 class="">Balance</h3>
+                <h2>$<span id="balanceTotal">00</span></h2>
+            </div>
+
+        </div>
+
+        <!-- Inputs -->
+        <div class="flex justify-around">
+
+            <!-- Deposite -->
+            <div>
+                <h3 class="text-white text-xl">Deposite</h3>
+                <div class="relative mt-1 rounded-md shadow-sm">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                      <span class="text-gray-500 sm:text-md">$</span>
+                    </div>
+                    <input type="text" id="depositedAmount" class="block w-[100%] rounded border-gray-300 py-2 pl-7 pr-2 my-3" placeholder="00.0">
+                </div>
+                <button class="px-5 py-2 rounded text-white bg-[#20252E] hover:bg-[#111318] transition" id="deposite">Deposite</button>
+            </div>
+
+            <!-- Withdraw -->
+            <div>
+                <h3 class="text-white text-xl">Withdraw</h3>
+                <div class="relative mt-1 rounded-md shadow-sm">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3">
+                      <span class="text-gray-500 sm:text-md">$</span>
+                    </div>
+                    <input type="text" id="withdrawalAmount" class="block w[100%]  rounded border-gray-300 py-2 pl-7 pr-2 my-3" placeholder="00.0">
+                </div>
+                <button class="px-5 py-2 rounded text-white bg-[#20252E] hover:bg-[#111318] transition" id="withdraw">Withdraw</button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    
+    <script src="assets/dashboard.js"></script>
+</body>
+</html>
